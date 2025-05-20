@@ -1,0 +1,31 @@
+{
+	"Integrations": {
+		"types": {
+			"google-drive": "Google Drive",
+			"dropbox": "Dropbox",
+			"onedrive": "Microsoft OneDrive"
+		},
+		"sidebar": {
+			"title": "Integrations",
+			"close": "Close the dialog"
+		},
+		"drag-overlay": {
+			"label": "Drop file to upload it to the current integration."
+		},
+		"header": {
+			"add-account": "Add account"
+		},
+		"table-header": {
+			"select-all": "Select all",
+			"upload": "Upload",
+			"search": "Search files..."
+		},
+		"content": {
+			"list": {
+				"manage": "Manage",
+				"select": "Select",
+				"unselect": "Unselect"
+			}
+		}
+	}
+}
