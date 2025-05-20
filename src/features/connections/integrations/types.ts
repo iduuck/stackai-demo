@@ -1,5 +1,5 @@
-import type { TIntegration } from "@/const/integrations";
+import type { TIntegration } from "@/types/integrations";
 
 export interface ConnectionIntegrationProps {
-  integration: TIntegration;
+	integration: TIntegration;
 }

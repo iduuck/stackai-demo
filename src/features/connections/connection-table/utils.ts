@@ -50,8 +50,10 @@ export const fuzzySort: SortingFn<any> = (rowA, rowB, columnId) => {
 	// Only sort by rank if the column has ranking information
 	if (rowA.columnFiltersMeta[columnId]) {
 		dir = compareItems(
-			rowA.columnFiltersMeta[columnId]?.itemRank!,
-			rowB.columnFiltersMeta[columnId]?.itemRank!,
+			// @ts-expect-error: pulled from docs.
+			rowA.columnFiltersMeta[columnId]?.itemRank,
+			// @ts-expect-error: pulled from docs.
+			rowB.columnFiltersMeta[columnId]?.itemRank,
 		);
 	}
 
