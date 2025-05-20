@@ -1,1 +1,1 @@
-export { ConnectionDialog } from './dialog'
+export { ConnectionDialog } from "./dialog";

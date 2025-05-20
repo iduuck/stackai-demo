@@ -3,9 +3,9 @@ import { ConnectionDialogSidebarHeader } from "./sidebar-header";
 
 export function ConnectionDialogSidebar({ children }: PropsWithChildren) {
 	return (
-		<aside className="select-none shrink-0 bg-sidebar min-h-128 w-58 border-r border-sidebar-border">
+		<aside className="min-h-128 w-58 shrink-0 select-none border-sidebar-border border-r bg-sidebar">
 			<ConnectionDialogSidebarHeader />
-			<main className="p-2 flex flex-col gap-2">{children}</main>
+			<main className="flex flex-col gap-2 p-2">{children}</main>
 		</aside>
 	);
 }

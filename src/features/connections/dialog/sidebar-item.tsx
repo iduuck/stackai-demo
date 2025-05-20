@@ -61,18 +61,18 @@ export function ConnectionDialogSidebarItem(
 			type="button"
 			onClick={handleClick}
 			className={cn(
-				"flex text-left gap-2 items-center p-2 cursor-pointer px-3 transition-colors rounded-lg",
+				"flex cursor-pointer items-center gap-2 rounded-lg p-2 px-3 text-left transition-colors",
 				active && "bg-sidebar-border/80",
 				!active && "hover:bg-sidebar-accent active:bg-sidebar-border",
 			)}
 		>
 			<Slot className="size-4 rounded-sm">{icon}</Slot>
 
-			<p className="text-sm font-medium whitespace-nowrap min-w-px flex-1 truncate">
+			<p className="min-w-px flex-1 truncate whitespace-nowrap font-medium text-sm">
 				{props.label ?? t(props.type)}
 
 				{props.sublabel ? (
-					<span className="text-sm text-muted-foreground font-normal">
+					<span className="font-normal text-muted-foreground text-sm">
 						{" "}
 						{props.sublabel}
 					</span>

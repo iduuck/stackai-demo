@@ -1,5 +1,5 @@
 import { fetchDataOptions } from "@/lib/queries/data";
-import { useQuery, useSuspenseQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { columns } from "../connection-table/columns";
 import { Table } from "../connection-table/table";
 import { TableFallback } from "../connection-table/table-fallback";

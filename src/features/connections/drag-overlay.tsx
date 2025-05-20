@@ -11,11 +11,11 @@ export function ConnectionDragOverlay({ active }: ConnectionDragOverlayProps) {
 		<div
 			data-active={active ? "" : undefined}
 			className={cn(
-				"absolute inset-0 p-2 bg-sidebar/50 data-active:opacity-100 transition-opacity opacity-0 pointer-events-none",
+				"pointer-events-none absolute inset-0 bg-sidebar/50 p-2 opacity-0 transition-opacity data-active:opacity-100",
 			)}
 		>
-			<div className="h-full w-full border-2 border-sidebar-border/80 rounded-sm flex items-center justify-center border-dashed">
-				<p className="text-sm font-semibold">{t("label")}</p>
+			<div className="flex h-full w-full items-center justify-center rounded-sm border-2 border-sidebar-border/80 border-dashed">
+				<p className="font-semibold text-sm">{t("label")}</p>
 			</div>
 		</div>
 	);
