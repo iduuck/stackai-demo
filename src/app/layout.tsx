@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ReactScan } from "@/components/utils/react-scan";
 import { IntlProvider } from "@/lib/intl";
 import { TanstackQueryProvider } from "@/lib/rq-client";
 
@@ -26,18 +27,14 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<head>
-				<script
-					crossOrigin="anonymous"
-					src="//unpkg.com/react-scan/dist/auto.global.js"
-				/>
-			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased [background-image:_url(/bg.png)] w-screen h-screen bg-cover tracking-[-0.015em]`}
+				className={`${geistSans.variable} ${geistMono.variable} h-screen w-screen bg-cover tracking-[-0.015em] antialiased [background-image:_url(/bg.png)]`}
 			>
 				<TanstackQueryProvider>
 					<IntlProvider>{children}</IntlProvider>
 				</TanstackQueryProvider>
+
+				<ReactScan />
 			</body>
 		</html>
 	);
