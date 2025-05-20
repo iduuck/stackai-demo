@@ -1,5 +1,8 @@
 ## StackAI Demo Project
 
+> [!IMPORTANT]
+> Because unnecessary re-renders where explained in the brief, I added `react-scan` to the project (and allowed to be run in production). This means, you can check the re-renders yourself on the page.
+
 ### Setup
 
 To get started with this project, simply run the following command in your terminal:
@@ -9,6 +12,7 @@ pnpm install && pnpm dev
 ```
 
 This will install all dependencies and start the development server. Once initialized, the application will be available at `http://localhost:3000`.
+
 
 ### Feature Set
 
